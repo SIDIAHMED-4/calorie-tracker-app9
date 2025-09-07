@@ -23,7 +23,7 @@ export function Record(props) {
     event.preventDefault();
     try {
       const response = await fetch(
-        `${import.meta.env.VITE_API_URL}/records/${props.id}`,
+        `${import.meta.env.VITE_API_URL}/api/records/${props.id}`,
         {
           method: "DELETE",
         }
